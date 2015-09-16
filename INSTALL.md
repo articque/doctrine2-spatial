@@ -1,9 +1,18 @@
 # Symfony2 Install
 
 ## composer.json
+    "repositories":
+    [
+		...
+            {
+                "type": "vcs",
+                "url": "https://github.com/articque/doctrine2-spatial"
+            }
+	],
     "require": {
     	...
         "articque/doctrine2-spatial": "dev-master"
+	}
 
 You will also have to change the version requirement of doctrine to at least 2.1:
 
